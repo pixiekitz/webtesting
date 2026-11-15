@@ -1,0 +1,173 @@
+body {
+  background-color: #ffffff;
+  display: grid;
+  font-family: "contm";
+  color: black;
+}
+@font-face {
+  font-family: "contm"; 
+  src: url("contm.ttf") format("truetype");
+}
+
+html { font-size: 16px; }
+body { padding: 1rem; }
+img {
+    width: stretch;
+    margin: auto;
+    padding: 0.2rem;
+}
+
+div {
+    padding: 0.2rem;
+    border-radius: 0.7rem;
+}
+
+button {
+    background-color: #ffffff;
+    border: 2px solid #cccccc;
+    color: black;
+    padding: 0.2rem;
+    border-radius: 0.7rem;
+    width: 250px;
+}
+button:hover {
+    border-color: #cccccc;
+    background-color: #eeeeee;
+}
+
+.b1:hover {
+    border-color: #ffcccc;
+    background-color: #ffeeee;
+}
+
+.container {
+  background-color: #eeeeee;
+  border: 2px solid #cccccc;
+  color: black;
+  padding: 0.2rem;
+  width: 20rem;
+
+}
+
+.cards {
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+  background: white;
+  border: none;
+}
+
+
+.card{
+   background-color: #ffffff;
+  border: 2px solid #dddddd;
+  color: black;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  width: auto;
+}
+.inviscard{
+   background-color: none;
+  border: none;
+  color: black;
+  padding: 0;
+  margin: auto;
+   margin-top: 0.2rem;
+   margin-bottom: 0.2rem;
+}
+
+.nameplate{
+   background-color: #ffffff;
+  border: 2px solid #dddddd;
+  color: black;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+.speechbubble{
+   background-color: #ffffff;
+  border: 2px solid #aaaaaa;
+  color: black;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  border-radius: 0.7rem;
+}
+
+.tri1 {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #aaaaaa;
+    border-radius: 1000px;
+    bottom: 2.7rem;
+    left: 14.4rem;
+    padding: 0px;
+    float: right;
+    vertical-align: top;
+    position: relative;
+}
+.tri2 {
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #ffffff;
+    border-radius: 1000px;
+    bottom: 2.4rem;
+    left: 16.59rem;
+    padding: 0px;
+    float: right;
+    vertical-align: top;
+    position: relative;
+}
+
+p { 
+  text-align: center;
+  padding: 0px;
+  margin: 2px;
+}
+
+a {
+  color: pink;
+  padding: 0px;
+  margin: 0px;
+}
+#status {
+  height: 3.4rem
+}
+#content {
+    padding: 0.2rem;
+    margin: 0px;
+    font-size: 1.2rem
+}
+#timeago {
+    margin: 0px;
+    font-size: 14px;
+    text-align: right;
+    padding: 0.2rem;
+    color: gray;
+    position: relative;
+    bottom: 1.2rem;
+}
+a:hover {
+  color: orange;
+}
+
+@media (min-width: 200px) {
+  .cards { grid-template-columns: repeat( 1, 1fr); }
+}
+
+@media (min-width: 500px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1000px) {
+  .cards { grid-template-columns: repeat(2, 1fr);  }
+}
+
+@media (min-width: 1440px) {
+  .cards { grid-template-columns: repeat(2, 1fr);  }
+  html { scale:2; margin-top:250px;}
+}
